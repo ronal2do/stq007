@@ -29,7 +29,7 @@ class PessoasController extends CrudController{
 			$this->grid->add('nascimento', 'Nascimento');
 			$this->grid->add('responsavel', 'Responsável');
 			$this->grid->add('email', 'Email');
-			$this->grid->add('tel-fixo', 'Telefone Fixo');
+			$this->grid->add('telfixo', 'Telefone Fixo');
 			$this->grid->add('rua', 'Logradouro');
 			$this->grid->add('numero', 'Número');
 			$this->grid->add('bairro', 'Bairro');
@@ -50,11 +50,11 @@ class PessoasController extends CrudController{
 
 			$this->edit->add('nome', 'Nome','text' );
 			$this->edit->add('sexo', 'Sexo', 'radiogroup')->option('F', 'Feminino')->option('M', 'Masculino');
-			$this->edit->add('nascimento', 'Nascimento','date')->placeholder('dd/mm/aaaa')->format('d/m/Y', 'pt-BR');
+			$this->edit->add('nascimento', 'Nascimento', 'date')->placeholder('dd/mm/aaaa')->format('d/m/Y', 'pt-BR');
 			$this->edit->add('responsavel', 'Responsável','text');
 			$this->edit->add('email', 'Email','text');
-			$this->edit->add('tel-fixo', 'Telefone Fixo','text');
-			$this->edit->add('tel-celular', 'Telefone Celular','text');
+			$this->edit->add('telfixo', 'Telefone Fixo','text');
+			$this->edit->add('telcelular', 'Telefone Celular','text');
 			$this->edit->add('rua', 'Logradouro','text');
 			$this->edit->add('numero', 'Número','text');
 			$this->edit->add('complemento', 'Complemento','text');
