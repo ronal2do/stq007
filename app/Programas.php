@@ -6,6 +6,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Programas extends Model {
 
-    protected $table = 'Programas';
+    protected $table = 'programas';
 
 }
